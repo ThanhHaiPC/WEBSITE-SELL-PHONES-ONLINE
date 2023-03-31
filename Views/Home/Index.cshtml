@@ -1,0 +1,108 @@
+﻿@{
+    ViewBag.Title = "Hai Store";
+
+}
+@using (Html.BeginForm("Timkiemsanpham", "Sanpham", FormMethod.Get))
+{
+    <ul>
+        <div style="float:right">
+            <input type="text" placeholder="Bạn muốn tìm gì?" name="searching" />
+            <input type="submit" value="Search" />
+        </div>
+    </ul>
+}
+
+<br />
+<div class="row">
+    <div class="col-md-8">
+        @Html.Action("SlidePartial", "Home")
+    </div>
+
+    <div class="col-md-4">
+        <img src="~/HinhanhSP/qc3.gif" class="img-responsive" alt="" width="1000" />
+        <p><a class="btn btn-default" href="https://www.thegioididong.com/">More &raquo;</a></p>
+    </div>
+</div>
+<div>
+    <img class="img-responsive" src="~/HinhanhSP/ban1.jpg" />
+</div>
+<br />
+<div class="spnoibat">
+    <div class="row">
+
+        <h3> SẢN PHẨM NỔI BẬT</h3>
+        <div class="col-md-4">
+            <img src="~/HinhanhSP/spnb1.png" class="img-responsive" alt="" />
+        </div>
+        <div class="col-md-4">
+            <img src="~/HinhanhSP/spnb2.png" class="img-responsive" alt="" />
+        </div>
+        <div class="col-md-4">
+            <img src="~/HinhanhSP/spnb3.png" class="img-responsive" alt="" />
+        </div>
+    </div>
+</div>
+<div class="danhmuc">
+
+</div>
+<div class="dt">
+
+    @Html.Action("dtiphonePartial", "Sanpham")
+</div>
+<div class="dt">
+
+    @Html.Action("dtsamsungpartial", "Sanpham")
+</div>
+
+<div class="dt">
+
+    @Html.Action("dtxiaomipartial", "Sanpham")
+</div>
+
+<div>
+    <h2> Tin tức sản phẩm</h2>
+    <div id="themeSlider" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#themeSlider" data-slide-to="0" class="active"></li>
+            <li data-target="#themeSlider" data-slide-to="1"></li>
+            <li data-target="#themeSlider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="imgOverlay"></div>
+                <img style="height:320px;width:100%" src="~/Images/files/tt1.png" alt="First slide">
+                <div class="carousel-caption">
+
+
+                </div>
+            </div>
+            <div class="item">
+                <div class="imgOverlay"></div>
+                <img style="height:320px;width:100%" src="~/Images/files/tt2.png" alt="Second slide">
+                <div class="carousel-caption">
+
+
+                </div>
+            </div>
+            <div class="item">
+                <div class="imgOverlay"></div>
+                <img style="height:320px;width:100%" src="~/Images/files/tt3.png" alt="Third slide">
+                <div class="carousel-caption">
+
+
+                </div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#themeSlider" data-slide="prev">
+            @*<span class="fa fa-chevron-left"></span>*@
+        </a>
+        <a class="right carousel-control" href="#themeSlider" data-slide="next">
+            @*<span class="fa fa-chevron-right"></span>*@
+        </a>
+
+    </div>
+</div>
+
+
+
+

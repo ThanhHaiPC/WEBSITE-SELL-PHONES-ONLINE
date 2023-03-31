@@ -1,0 +1,23 @@
+﻿@model HaiStore.Models.Nguoidung
+@{
+    ViewBag.Title = "Test";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var u = Session["use"] as HaiStore.Models.Nguoidung;
+}
+
+@{
+    if (u != null)
+    {
+
+        <h2>Xin chào : @u.Email</h2>
+        @Html.ActionLink("Đăng xuất", "DangXuat", "User")
+    }
+
+    <div> Hải IT</div>
+
+}
+
+
+
+
+
