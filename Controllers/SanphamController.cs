@@ -35,7 +35,6 @@ namespace HaiStore.Controllers
                 return null;
             }
             return View(chitiet);
-
         }
         public ActionResult Timkiemsanpham(string searching)
         {

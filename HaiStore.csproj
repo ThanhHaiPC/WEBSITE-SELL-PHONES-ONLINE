@@ -1399,7 +1399,6 @@
     <Content Include="Views\Payment\ThongTinThanhToan.cshtml" />
     <Content Include="Views\Payment\ChonPhuongThucThanhToan.cshtml" />
     <Content Include="Views\Sanpham\Timkiemsanpham.cshtml" />
-    <Content Include="Views\Payment\Result.cshtml" />
     <None Include="Web.Debug.Config">
       <DependentUpon>Web.Config</DependentUpon>
     </None>

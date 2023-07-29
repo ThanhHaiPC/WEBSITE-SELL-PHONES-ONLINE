@@ -32,11 +32,11 @@ namespace HaiStore.Controllers
                 db.SaveChanges();             
                 if (ModelState.IsValid)
                 {
-                    //if (db.Nguoidungs.Any(x => x.Email == nguoidung.Email))
-                    //{
-                    //    ViewBag.BiTrungEmail = "Email nay da ton tai!!!";
-                    //    return View("DangKy", nguoidung);
-                    //}
+                    if (db.Nguoidungs.Any(x => x.Email == nguoidung.Email))
+                    {
+                        ViewBag.BiTrungEmail = "Email nay da ton tai!!!";
+                        return View("DangKy", nguoidung);
+                    }
                     ViewBag.RegOk = "Đăng kí thành công. Đăng nhập ngay";
                     ViewBag.isReg = true;
                     return View("Dangky");

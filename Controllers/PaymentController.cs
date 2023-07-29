@@ -151,7 +151,7 @@ namespace HaiStore.Controllers
                         donhang.MaNguoidung = user.MaNguoiDung;
                         donhang.Ngaydat = DateTime.Now;
                         donhang.Tongtien = db.Donhangs.Find(k).Tongtien;
-                        db.Chitietdonhangs.Add(ctdh);  
+                        db.Chitietdonhangs.Add(ctdh);
                         db.SaveChanges();                     
                         //Thanh toan thanh cong
                         s = "Giao dịch được thực hiện thành công. Cảm ơn quý khách đã sử dụng dịch vụ";
